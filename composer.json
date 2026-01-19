@@ -2,6 +2,7 @@
     "name": "novatorius/phpnomad",
     "description": "PHPNomad packages bundle",
     "type": "wordpress-plugin",
+    "version": "1.0.0",
     "require": {
         "phpnomad/array-json-config": "^1.0.0",
         "phpnomad/asset": "^1.0.0",
