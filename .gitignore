@@ -1,0 +1,18 @@
+# Composer dependencies
+/vendor/
+composer.lock
+
+# Build artifacts
+phpnomad.zip
+phpnomad/
+
+# IDE files
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
