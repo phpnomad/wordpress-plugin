@@ -25,13 +25,14 @@ jobs:
       - name: Create plugin directory structure
         run: |
           mkdir -p phpnomad
-          rsync -av --exclude='.git' --exclude='phpnomad' --exclude='.github' . phpnomad/
+          rsync -av --exclude='.git' --exclude='phpnomad' --exclude='.github' --exclude='vendor' . phpnomad/
+          cp -r vendor phpnomad/
       
       - name: Create zip file
         run: zip -r phpnomad.zip phpnomad
       
       - name: Upload release asset
-        uses: softprops/action-gh-release@v1
+        uses: softprops/action-gh-release@v2
         with:
           files: phpnomad.zip
         env:
