@@ -1,5 +1,5 @@
 {
-    "name": "novatorius/phpnomad",
+    "name": "phpnomad/wordpress-plugin",
     "description": "PHPNomad packages bundle",
     "type": "wordpress-plugin",
     "version": "1.0.0",
